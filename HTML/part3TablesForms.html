@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- tables -->
+
+    <table>
+
+        <tr> <!--table row (you dont specifiy colums) -->
+            <th>Column 1 </th> <!-- table data -->
+            <th>Column 2 </th> <!-- table data -->
+            <th>Column 3 </th> <!-- table data -->
+        </tr>
+        <tr> <!--table row (you dont specifiy colums) -->
+            <td>cell 1 </td> <!-- table data -->
+            <td>cell 2 </td> <!-- table data -->
+            <td>cell 3 </td> <!-- table data -->
+        </tr>
+        <tr> <!--table row (you dont specifiy colums) -->
+            <td>cell 1 </td> <!-- table data -->
+            <td>cell 2 </td> <!-- table data -->
+            <td>cell 3 </td> <!-- table data -->
+        </tr>
+    </table>
+
+
+    <!-- Forms - made up of a METHOS and an Action-->
+    <!-- M - how to send info (to a server)-->
+    <!-- A - WHERE to send info -->
+
+    <!-- GET method sends out form input to the URL bar-->
+    <!-- with a name : value pair - used like a hyperlink-->
+    <forms method="get" action="search.html">
+        <h1>Get Form</h1>
+        <!--an input for data-->
+        <input name ="q" type="text">
+        <button type="submit" >search</button>
+
+    <!--POST method sends data to the action URL-->
+    <forms method="post" action="mailform.php">
+        <h1>Post Form</h1>
+        <input name ="q" type="text">
+        <button type="submit" >search</button>
+
+
+
+
+    </forms>
+
+    Address
+    <textarea name="UsrAddress" rows="7" cols="24"></textarea>
+
+
+    <forms method="post" action="mailform.php">
+        <h1>Post Form</h1>
+        <input type  ="Checkbox" value="1">
+        1
+        <input type  ="Checkbox" value="2">
+        2
+    </forms>
+
+    <form novalidate>
+
+        <input type="email" id="addre">
+        <input type="submit" id="subscribe">
+
+    </form>
+<fieldset disabled>
+    <legend>question 1</legend>
+    <input type  ="radio" name = "multi" value="a">
+    a
+    <input type  ="radio" name = "multi" value="b">
+    b
+    <input type  ="radio" name = "multi" value="c">
+    c
+    <input type  ="radio" name = "multi" value="d">
+    d
+</fieldset>
+
+<input type  ="date" name = "bday" />
+
+<input type  ="color" name = "paint" />
+
+<input type  ="submit" name = "paint" value="hit me"/>
+
+<input type = "range" min="1" max="20" value = "9">
+
+<input type = "search">
+
+<input type="text" pattern="[0-9]{13.16}" name="CreditCardNumber">
+
+<input list = "Browers"/>
+<datalist id="browsers">
+    <option value="IE"></option>
+    <option value="Fire fox"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+</datalist>
+
+
+<select name="Drop 1" size="1" id="drop1">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+
+<select name="Drop 2" size="4" id="drop2">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    </select>
+
+<hr/>
+<br/>
+
+<iframe style="border" height="200" width="600" src="https://www.wikipedia.com "></iframe>
+<iframe style="border" height="200" width="600" name="2"></iframe>
+<a href="src=https://www.wikipedia.com " target="2"></a>
+
+
+
+<iframe style="border: 2px solid red;" height="200" width="600" src="https://www.wikipedia.com/"></iframe>
+        <iframe height="300" width="50%" name="iframe_two"></iframe>
+        <a href="https://www.wikipedia.com/" target="iframe_two">Wiki on iFrame</a>
+
+
+    
+</body>
+</html>
